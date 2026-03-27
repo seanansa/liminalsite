@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liminal</title>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 20px;
+      max-width: 600px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <video autoplay muted loop playsinline>
+    <source src="liminal1.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="content">
+    <img src="liminal.png" class="logo" alt="Logo">
+    <h1>We are a design-led development firm that transforms places into experiences</h1>
+    <p>Get in touch - info@lmnlworks.com</p>
+  </div>
+
+</body>
+</html>
